@@ -15,7 +15,7 @@ def _segm_resnet(name, backbone_name, num_classes, output_stride, pretrained_bac
     backbone = resnet.__dict__[backbone_name](
         pretrained=pretrained_backbone,
         replace_stride_with_dilation=replace_stride_with_dilation)
-    
+
     inplanes = 2048
     low_level_planes = 256
 
